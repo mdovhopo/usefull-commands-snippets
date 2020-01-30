@@ -20,7 +20,10 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <im
 ### ssh tunnel to remote docker container
 
 1. get [container ip](https://github.com/max-rollun-dev/usefull-commands-snippets#get-ip-of-running-docker-container)
-2. 
+2. connect to container:
+```sh
+ssh -f -L [local-port]:[container-ip]:[exposed-container-ip] [remote-machine-user]@[remote-machine-ip] -N
+```
 
 
 
