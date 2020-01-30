@@ -29,21 +29,4 @@ ssh -f -L [local-port]:[container-ip]:[exposed-container-ip] [remote-machine-use
 
 ## JS/TS
 
-12h time to 24 time
-```js
-const to24htime = time => {
-    const ten = i => (i < 10 ? '0' : '') + i;
-    return time.replace(/([0-9]{1,2}):([0-9]{1,2})\s?(pm|am)/i, (...match) => {
-      const [, hours, minutes, partOfDay] = match;
-      let HH = +hours;
-      let MM = +minutes;
-      if (/am/i.test(partOfDay) && HH === 12 ) {
-        HH -= 12;
-      }
-      if (/pm/i.test(partOfDay) && HH >= 1 && HH < 12) {
-        HH += 12;
-      }
-      return `${ten(HH)}:${ten(MM)}`;
-    });
-  }
-```
+- [12h time to 24 time](https://github.com/max-rollun-dev/usefull-commands-snippets/blob/master/to24htime.js)
