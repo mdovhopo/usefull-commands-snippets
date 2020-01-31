@@ -1,5 +1,6 @@
 # usefull-commands-snippets
 
+## DEVOPS
 
 #### get list of ips in local network
 ```sh
