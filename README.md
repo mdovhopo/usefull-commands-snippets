@@ -21,6 +21,9 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <im
 ssh -f [remote-machine-user]@[remote-machine-ip] -L [local-port]:[server-ip]:[server-port] -N
 ```
 
+### run .gitlab-ci CI/CD script localy
+
+[link](https://gitlab.com/gitlab-org/gitlab-runner/issues/312)
 
 ## JS/TS
 
