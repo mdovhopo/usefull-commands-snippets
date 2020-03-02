@@ -23,6 +23,12 @@ ssh -f [remote-machine-user]@[remote-machine-ip] -L [local-port]:[server-ip]:[se
 
 ### run .gitlab-ci CI/CD script [locally](https://gitlab.com/gitlab-org/gitlab-runner/issues/312)
 
+### replace in files
+
+```sh
+find . -type f  -exec sed -i '' -e 's/foo/bar/g' {} \;
+```
+
 ## JS/TS
 
 - [12h time to 24 time](https://github.com/max-rollun-dev/usefull-commands-snippets/blob/master/to24htime.js)
