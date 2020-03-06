@@ -29,8 +29,11 @@ ssh -f [remote-machine-user]@[remote-machine-ip] -L [local-port]:[server-ip]:[se
 find . -type f  -exec sed -i '' -e 's/foo/bar/g' {} \;
 ```
 
-### resize fs online
-xfs_growfs <disk_name>
+### resize disk on proxmox vm
+
+1. qm resize <VMID> + 5G
+2. # resize partion with parted
+3. xfs_growfs <disk_name> # resise filesystem space
 
 ## JS/TS
 
