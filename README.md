@@ -29,6 +29,9 @@ ssh -f [remote-machine-user]@[remote-machine-ip] -L [local-port]:[server-ip]:[se
 find . -type f  -exec sed -i '' -e 's/foo/bar/g' {} \;
 ```
 
+### resize fs online
+xfs_growfs <disk_name>
+
 ## JS/TS
 
 - [12h time to 24 time](https://github.com/max-rollun-dev/usefull-commands-snippets/blob/master/to24htime.js)
