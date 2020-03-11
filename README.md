@@ -35,6 +35,12 @@ find . -type f  -exec sed -i '' -e 's/foo/bar/g' {} \;
 2. parted # resize partion with parted
 3. xfs_growfs <disk_name> # resise filesystem space
 
+### forward port using iptables
+
+```sh
+#                                                       ip to             port to               ip from       port from
+iptables -t nat -A PREROUTING -t nat -i vmbr0 -p tcp -d 185.128.234.3 --dport 5913 -j DNAT --to 192.168.50.13:5901
+```
 ## JS/TS
 
 - [12h time to 24 time](https://github.com/max-rollun-dev/usefull-commands-snippets/blob/master/to24htime.js)
