@@ -35,6 +35,11 @@ find . -type f  -exec sed -i '' -e 's/foo/bar/g' {} \;
 2. parted # resize partion with parted
 3. xfs_growfs <disk_name> # resise filesystem space
 
+### list of rules iptables
+```sh
+iptables -t nat -L --line-numbers -n
+```
+
 ### forward port using iptables
 
 ```sh
