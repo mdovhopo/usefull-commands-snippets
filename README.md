@@ -46,6 +46,19 @@ iptables -t nat -L --line-numbers -n
 #                                                       ip to             port to               ip from       port from
 iptables -t nat -A PREROUTING -t nat -i vmbr0 -p tcp -d 185.128.234.3 --dport 5913 -j DNAT --to 192.168.50.13:5901
 ```
+
+## MySQL
+
+### get sizes of all tables in all databases
+
+```mysql
+SELECT table_name AS "Table",
+ROUND(((data_length + index_length) / 1024 / 1024), 2) AS "Size (MB)"
+FROM information_schema.TABLES
+WHERE table_schema = "database_name"
+ORDER BY (data_length + index_length) DESC;
+```
+
 ## JS/TS
 
 - [12h time to 24 time](https://github.com/max-rollun-dev/usefull-commands-snippets/blob/master/to24htime.js)
