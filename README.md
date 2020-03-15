@@ -32,7 +32,7 @@ find . -type f  -exec sed -i '' -e 's/foo/bar/g' {} \;
 ### resize disk on proxmox vm
 
 1. qm resize *VMID* *DISK_NAME* +5G
-2. parted # resize partion with parted
+2. parted # resize partion with parted and resizepart command
 3. xfs_growfs <disk_name> # resise filesystem space
 
 ### list of rules iptables
