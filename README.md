@@ -28,6 +28,15 @@ ssh -f [remote-machine-user]@[remote-machine-ip] -L [local-port]:[server-ip]:[se
 ```sh
 find . -type f  -exec sed -i '' -e 's/foo/bar/g' {} \;
 ```
+### find list of words in files with some lines before and after
+
+```sh
+// -B - before 4 lines
+// -A - after 4 lines
+// -n - show line number
+// -Ff - take words from file
+grep -B 4 -A 4 -nFf words.txt search_me.txt
+```
 
 ### resize disk on proxmox vm
 
