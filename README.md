@@ -56,6 +56,8 @@ iptables -t nat -L --line-numbers -n
 iptables -t nat -A PREROUTING -t nat -i vmbr0 -p tcp -d 185.128.234.3 --dport 5913 -j DNAT --to 192.168.50.13:5901
 ```
 
+### iptables [guide](https://help.ubuntu.ru/wiki/iptables) 
+
 ## MySQL
 
 ### get sizes of all tables in all databases
