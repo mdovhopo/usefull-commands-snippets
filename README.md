@@ -63,7 +63,7 @@ iptables -t nat -A PREROUTING -t nat -i vmbr0 -p tcp -d 185.128.234.3 --dport 59
 ### get sizes of all tables in all databases
 
 ```mysql
-SELECT table_name AS "Table",
+SELECT table_schema AS "DB", table_name AS "Table",
 ROUND(((data_length + index_length) / 1024 / 1024), 2) AS "Size (MB)"
 FROM information_schema.TABLES
 WHERE table_schema = "database_name"
