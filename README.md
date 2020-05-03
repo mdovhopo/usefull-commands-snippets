@@ -70,6 +70,8 @@ WHERE table_schema = "database_name"
 ORDER BY (data_length + index_length) DESC;
 ```
 
+## backup and restore db with [xtrabackup](https://www.camil.org/hot-backups-and-restore-of-mysql-with-percona-xtrabackup/)
+
 ## JS/TS
 
 - [12h time to 24 time](https://github.com/max-rollun-dev/usefull-commands-snippets/blob/master/to24htime.js)
