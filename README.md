@@ -75,3 +75,5 @@ ORDER BY (data_length + index_length) DESC;
 ## JS/TS
 
 - [12h time to 24 time](https://github.com/max-rollun-dev/usefull-commands-snippets/blob/master/to24htime.js)
+
+## Optimize node.js app [link](https://proglib.io/p/sekrety-sozdaniya-proizvoditelnyh-veb-prilozheniy-na-express-js-2020-05-06)
