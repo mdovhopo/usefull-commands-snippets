@@ -2,6 +2,15 @@
 
 ## DEVOPS
 
+#### get bandwidth between hosts
+
+```sh
+# on destination machine
+iperf -s -p 5555
+# on source machine
+iperf -c <remote_ip> -p 5555
+```
+
 #### get list of ips in local network
 ```sh
 
