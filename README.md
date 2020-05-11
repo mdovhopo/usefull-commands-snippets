@@ -44,9 +44,9 @@ grep -B 4 -A 4 -nFf words.txt search_me.txt
 
 ### resize disk on proxmox vm
 
-1. qm resize *VMID* *DISK_NAME* +5G
+1. qm resize *VMID* *DISK_DEVICE_NAME(scsi0, etc)* +5G
 2. parted # resize partion with parted and resizepart command
-3. xfs_growfs <disk_name> # resise filesystem space
+3. xfs_growfs <disk_name(local disk name)> # resise filesystem space
 
 ### list of rules iptables
 ```sh
