@@ -2,14 +2,9 @@
 
 ## DEVOPS
 
-#### get bandwidth between hosts
+#### get bandwidth between hosts [link](https://www.cyberciti.biz/faq/how-to-test-the-network-speedthroughput-between-two-linux-servers/)
 
-```sh
-# on destination machine
-iperf -s -p 5555
-# on source machine
-iperf -c <remote_ip> -p 5555
-```
+#### change disk mount point [link](https://askubuntu.com/a/555292)
 
 #### get list of ips in local network
 ```sh
