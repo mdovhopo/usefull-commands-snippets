@@ -60,6 +60,12 @@ iptables -t nat -L --line-numbers -n
 iptables -t nat -A PREROUTING -t nat -i vmbr0 -p tcp -d 185.128.234.3 --dport 5913 -j DNAT --to 192.168.50.13:5901
 ```
 
+### delete rule
+
+```sh
+iptables -t nat -D PREROUTING
+```
+
 ### iptables [guide](https://help.ubuntu.ru/wiki/iptables) 
 
 ## MySQL
