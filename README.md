@@ -68,6 +68,12 @@ iptables -t nat -D PREROUTING
 
 ### iptables [guide](https://help.ubuntu.ru/wiki/iptables) 
 
+### ports on machine
+
+```sh
+netstat -tunlp
+```
+
 ## MySQL
 
 ### get sizes of all tables in all databases
